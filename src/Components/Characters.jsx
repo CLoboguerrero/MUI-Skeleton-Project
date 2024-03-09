@@ -1,15 +1,15 @@
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 
-const Characters = () => {
+const Characters = ({ name, image }) => {
   return (
     <Card>
       <CardMedia
-        image='https://rickandmortyapi.com/api/character/avatar/1.jpeg'
+        image={image}
         title = "Rick Sanchez"
         sx={{height: 250, width: 250}}
       />
       <CardContent>
-        <Typography variant='h5'>Rick Sanchez</Typography>
+        <Typography variant='h5'>{name}</Typography>
       </CardContent>
     </Card>
   )
